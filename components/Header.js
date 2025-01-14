@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export default function Header() {
   return (
     <View style={styles.header}>
       <Image source={require('../assets/Vector.png')} style={styles.image} />

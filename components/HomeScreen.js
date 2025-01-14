@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, StyleSheet, View, Button, StatusBar } from 'react-native'
 
-export default function App() {
+export default function HomeScreen() {
   
     return (
       <View>
