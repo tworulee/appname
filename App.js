@@ -14,6 +14,8 @@ import WeatherDetail from "./components/WeatherDetail";
 import WeekWeathers from "./components/WeekWeathers";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
+import { API_URL, API_KEY } from '@env';
+
 
 const API_KEY = "08e3bd25b52cb1d93d6c2abc15a27c28"; // OpenWeather API anahtarı
 
@@ -35,8 +37,6 @@ const App = () => {
         `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API_KEY}`
       );
       const data = await response.json();
-      console.log(data);
-      console.log(data.list[0].wind);
 
       if (data.cod !== "200") {
         Alert.alert("Error", "City not found.");
